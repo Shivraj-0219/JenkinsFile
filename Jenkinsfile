@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Validate') {
             steps {
-                echo 'Building..'
+                echo 'Validate..'
             }
         }
-        stage('Test') {
+        stage('Unit Test and Build') {
             steps {
-                echo 'Testing..'
+                echo 'Tested and Build..'
             }
         }
         stage('Deploy') {
